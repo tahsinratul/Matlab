@@ -7,7 +7,7 @@
     % Actual solution:
     % y(x) = (1/6)*x^3*exp(x) - (5/3)*x*exp(x) + 2*exp(x) - x - 2
 
-    function lsa
+    function linear
     clc
     clf
     clear all

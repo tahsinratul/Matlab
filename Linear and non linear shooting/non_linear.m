@@ -8,7 +8,7 @@
     % Actual solution:
     % y(x) = ln(x)
 
-    function nlsa
+    function non_linear
     clc
     clf
     clear all
