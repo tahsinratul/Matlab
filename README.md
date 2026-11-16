@@ -4,17 +4,17 @@ A collection of MATLAB programs implementing numerical methods for solving diffe
 
 ## Repository Structure
 
-| Folder | Description |
-| --- | --- |
-| `Crank heat equation/` | Programs for solving the heat equation using the Crank–Nicolson method |
-| `Cubic spline/` | Programs for cubic spline interpolation of data points |
-| `Finite difference method/` | Programs for solving differential equations using finite differences |
-| `Galerkin method/` | Programs for solving differential equations using the Galerkin method |
-| `Heat equation/` | Programs for solving the heat equation numerically |
-| `Laplace equation/` | Programs for solving the Laplace equation numerically |
-| `Linear and non linear shooting/` | Programs for boundary value problems using linear and nonlinear shooting methods |
-| `RK method/` | Programs for solving ordinary differential equations using Runge–Kutta methods |
-| `Wave equation/` | Programs for solving the wave equation numerically |
+| No. | Folder                            | Description                                                                      |
+| --- | --------------------------------- | -------------------------------------------------------------------------------- |
+| 1   | `RK method/`                      | Programs for solving ordinary differential equations using Runge–Kutta methods   |
+| 2   | `Linear and non linear shooting/` | Programs for boundary value problems using linear and nonlinear shooting methods |
+| 3   | `Cubic spline/`                   | Programs for cubic spline interpolation of data points                           |
+| 4   | `Heat equation/`                  | Programs for solving the heat equation numerically                               |
+| 5   | `Crank heat equation/`            | Programs for solving the heat equation using the Crank–Nicolson method           |
+| 6   | `Wave equation/`                  | Programs for solving the wave equation numerically                               |
+| 7   | `Laplace equation/`               | Programs for solving the Laplace equation numerically                            |
+| 8   | `Finite difference method/`       | Programs for solving differential equations using finite differences             |
+| 9   | `Galerkin method/`                | Programs for solving differential equations using the Galerkin method            |
 
 ## Requirements
 
