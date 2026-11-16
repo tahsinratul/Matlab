@@ -44,7 +44,7 @@
     hold on
     stem(x,eu2,'*k')
     hold on
-    legend('Approximate so;ution','actual solution')
+    legend('Approximate solution','actual solution')
     fprintf(' x u1 u2 eu1 eu2 \n');
     for i=1:n+1
         fprintf(' %11.5f %11.5f %11.5f %11.5f %11.5f\n',x(i),u1(i),u2(i),eu1(i),eu2(i));
