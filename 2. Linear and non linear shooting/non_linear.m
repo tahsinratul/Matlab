@@ -49,7 +49,7 @@
             stem(x,ey,'*r')
             fprintf('x approximate exact error\n');
             for i=1:n+1
-                fprintf('%11.5f %11.5f %11.5f %11.5f \n',x(i),u(i),ey(i), ey(i)-u(i));
+                fprintf('%11.5f %11.5f %11.5f %11.5f \n',x(i),u(i),ey(i), abs(ey(i)-u(i)));
             end
             legend('numerical result','exact result');
             xlabel('x-axis');
