@@ -60,7 +60,7 @@
             k=k+1;
         end
     end
-    function z1=f(x,u,u1)
-    z1=-(u1)^2-u+log(x);
-    function z2=g(x,v,v1,u,u1)
-    z2=-v-2*u1*v1
+    function u2=f(x,u,u1)
+    u2=-(u1)^2-u+log(x);
+    function v2=g(x,v,v1,u,u1)
+    v2=-v-2*u1*v1
