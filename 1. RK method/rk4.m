@@ -29,10 +29,10 @@ for i=1:n
     y(i+1)=y(i)+h*(y1(i)+(k1+k2+k3)/6);
     y1(i+1)=y1(i)+(k1+2*k2+2*k3+k4)/6;
 end
-plot(t,y,'-b');
+plot(t,y,'-b')
 hold on
 ey=7/4*t+1/2*t.^3.*log(t)-3/4*t.^3;
-stem(t,ey,'*k');
+stem(t,ey,'*k')
 hold on
 legend('approximate solution','actual solution');
 fprintf(' t approximate exact error \n');
