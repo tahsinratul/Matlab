@@ -14,15 +14,15 @@
     clear all
     a=1;
     b=2;
-    h=0.1;
-    tol=0.00001;
-    n=(b-a)/h;
-    x=linspace(a,b,n+1);
     alpha=0;
     beta=log(2);
+    h=0.1;
+    tol=0.00001;
     m=10;
-    tk=(beta-alpha)/(b-a);
     k=1;
+    n=(b-a)/h;
+    tk=(beta-alpha)/(b-a);
+    x=linspace(a,b,n+1);
     while k<=m
         u(1)=alpha;
         u1(1)=tk;
