@@ -37,10 +37,10 @@
         v1(i+1)=v1(i)+(p1+2*p2+2*p3+p4)/6;
     end
     y=u+((beta-u(n+1))/v(n+1))*v;
-    plot(x,y,'-b');
+    plot(x,y,'-b')
     hold on
     ey=(1/6)*x.^3.*exp(x)-(5/3)*x.*exp(x)+2*exp(x)-x-2;
-    stem(x,ey,'*k');
+    stem(x,ey,'*k')
     hold off
     legend('numerical result','exact result')
     xlabel('x axis');
