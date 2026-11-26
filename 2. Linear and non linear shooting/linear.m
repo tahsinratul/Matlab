@@ -13,15 +13,15 @@
     clear all
     a=0;
     b=2;
-    h=0.1;
-    n=(b-a)/h;
-    x=linspace(a,b,n+1);
     alpha=0;
     beta=-4;
+    h=0.1;
+    n=(b-a)/h;
     u(1)=alpha;
     u1(1)=0;
     v(1)=0;
     v1(1)=1;
+    x=linspace(a,b,n+1);
     for i=1:n
         k1=h*f(x(i),u(i),u1(i));
         k2=h*f(x(i)+h/2,u(i)+u1(i)*h/2+h*k1/8,u1(i)+k1/2);
