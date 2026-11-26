@@ -47,7 +47,7 @@ hold on
 legend('Approximate solution','actual solution')
 fprintf(' t u1 u2 eu1 eu2 abserr1 abserr2 \n');
 for i=1:n+1
-    fprintf(' %11.5f %11.5f %11.5f %11.5f %11.5f\n',t(i),u1(i),u2(i),eu1(i),eu2(i),abs(eu1(i)-u1(i)), abs(eu2(i)-u2(i)));
+    fprintf(' %11.5f %11.5f %11.5f %11.5f %11.5f %11.5f %11.5f\n',t(i),u1(i),u2(i),eu1(i),eu2(i),abs(eu1(i)-u1(i)), abs(eu2(i)-u2(i)));
 end
 function z1=f1(t,u1,u2)
 z1=3*u1+2*u2-(2*t^2+1)*exp(2*t);
