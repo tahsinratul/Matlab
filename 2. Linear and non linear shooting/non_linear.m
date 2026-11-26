@@ -43,7 +43,7 @@
             v1(i+1)=v1(i)+(p1+2*p2+2*p3+p4)/6;
         end
         if (abs(u(n+1)-beta)<tol)
-            plot (x,u)
+            plot (x,u,'-k')
             hold on
             ey=log(x);
             stem(x,ey,'or');
