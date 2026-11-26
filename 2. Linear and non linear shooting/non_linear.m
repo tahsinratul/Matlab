@@ -47,6 +47,7 @@
             hold on
             ey=log(x);
             stem(x,ey,'*r')
+            hold off
             fprintf('x approximate exact error\n');
             for i=1:n+1
                 fprintf('%11.5f %11.5f %11.5f %11.5f \n',x(i),u(i),ey(i), abs(ey(i)-u(i)));
