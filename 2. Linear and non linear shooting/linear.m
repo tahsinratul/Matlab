@@ -49,7 +49,7 @@
     for i=1:n+1
         fprintf(' %11.5f %11.5f %11.5f %11.5f \n',x(i),y(i),ey(i),abs(ey(i)-y(i)));
     end
-    function z=f(x,u,u1)
-    z=2*u1-u+x*exp(x)-x;
-    function z1=g(x,v,v1)
-    z1=2*v1-v;
+    function w=f(x,u,u1)
+    w=2*u1-u+x*exp(x)-x;
+    function z=g(x,v,v1)
+    z=2*v1-v;
