@@ -46,7 +46,7 @@
             plot (x,u,'-k')
             hold on
             ey=log(x);
-            stem(x,ey,'or');
+            stem(x,ey,'*r')
             fprintf('x approximate exact error\n');
             for i=1:n+1
                 fprintf('%11.5f %11.5f %11.5f %11.5f \n',x(i),u(i),ey(i), ey(i)-u(i));
