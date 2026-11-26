@@ -30,6 +30,7 @@
     ey=(t.^2)+(1/3)*(exp(-5*t));
     stem(t,ey,'*r')
     hold on
+    legend('Approximate solution','actual solution')
     fprintf(' t approximate exact abserror\n');
     for i=1:n+1
         fprintf('%11.5f %11.5f %11.5f %11.5f\n',t(i),y(i),ey(i),abs(ey(i)-y(i)));
