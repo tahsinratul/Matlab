@@ -43,7 +43,7 @@ hold on
 plot(t,u2,'-k')
 hold on
 stem(t,eu2,'*k')
-hold on
+hold off
 legend('Approximate solution','actual solution')
 fprintf(' t u1 u2 eu1 eu2 abserr1 abserr2 \n');
 for i=1:n+1

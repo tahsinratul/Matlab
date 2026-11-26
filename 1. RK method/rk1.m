@@ -29,7 +29,7 @@
     hold on
     ey=(t.^2)+(1/3)*(exp(-5*t));
     stem(t,ey,'*r')
-    hold on
+    hold off
     legend('Approximate solution','actual solution')
     fprintf(' t approximate exact abserror\n');
     for i=1:n+1

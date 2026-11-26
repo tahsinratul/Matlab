@@ -37,7 +37,7 @@ plot(t,y,'-b')
 hold on
 ey=(7/4)*t+(1/2)*(t.^3).*log(t)-(3/4)*(t.^3);
 stem (t,ey,'*r')
-hold on
+hold off
 legend('approximate solution','actual solution');
 fprintf(' t approximate exact error \n');
 for i=1:n+1
