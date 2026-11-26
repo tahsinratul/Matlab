@@ -56,7 +56,8 @@
             ylabel('y-axis');
             fprintf('number of iteration =%d',k);
             break;
-        else tk=tk-(u(n+1)-beta)/v(n+1);
+        else 
+            tk=tk-(u(n+1)-beta)/v(n+1);
             k=k+1;
         end
     end
