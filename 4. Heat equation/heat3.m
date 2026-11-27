@@ -10,8 +10,8 @@
 
     function heat3
     clc
-    clear all
     clf
+    clear all
     c=1/pi;%Diffusivity
     a=0;%Left boundary
     b=1;%Right boundary
@@ -39,7 +39,6 @@
     disp('Result=')
     num2str(u')
     figure (1)
-    clf
     surfc(u')
     colorbar
     grid on
