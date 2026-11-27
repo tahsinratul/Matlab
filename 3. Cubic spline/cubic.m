@@ -25,10 +25,10 @@ for i=2:n-1
 end
 z=(A^(-1))*b' ;
 w(1)=0;
+w(n+1)=0;
 for i=2:n
     w(i)=z(i-1);
 end
-w(n+1)=0;
 plot(x,y,'ok')
 hold on
 for j=1:length(p)
