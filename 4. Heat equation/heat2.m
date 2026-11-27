@@ -49,10 +49,7 @@
     ylabel('t-axis');
     zlabel('u(x,t)');
     hold off
-    x(1)=a; x(n)=b;
-    for i=2:n-1
-        x(i)=x(i-1)+h;
-    end
+    x=linspace(a,b,n);
     figure (2)
     sum=0.0;
     for i=1:n
