@@ -40,4 +40,4 @@ for i=1:n+1
     fprintf(' %11.5f %11.5f %11.5f %11.5f \n',t(i),y(i),ey(i),abs(ey(i)-y(i)));
 end
 function z=f(t,y,y1)
-z=2/t*y1-2*y/t^2+t*log(t);
+z=(2/t)*y1-(2/(t^2))*y+t*log(t);

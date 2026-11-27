@@ -46,4 +46,4 @@ end
 function z=f(t,y,y1)
 z=y1;
 function z1=f1(t,y,y1)
-z1=(2/t)*y1-(2/(t.^2))*y+t*log(t);
+z1=(2/t)*y1-(2/(t^2))*y+t*log(t);
