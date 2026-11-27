@@ -18,8 +18,8 @@ b=1;
 tf=0.04;
 n=8;
 m=7;
-c1=0;
-c2=0;
+C1=0;
+C2=0;
 h=(b-a)/(n-1);
 k=(tf-0)/(m-1);
 r=(c*c*k)/(h*h);
@@ -27,8 +27,8 @@ s1=2+(2/r);
 s2=(2/r)-2;
 u=zeros(n,m);
 for j=1:m
-    u(1,j)=c1;
-    u(n,j)=c2;
+    u(1,j)=C1;
+    u(n,j)=C2;
 end
 for i=2:n-1
     u(i,1)=f(a+(i-1)*h);
@@ -36,9 +36,9 @@ end
 A(1,1)=1;
 for j=2:m
     for i=2:n-1
-        F(1,j-1)=c1;
+        F(1,j-1)=C1;
         F(i,j-1)=u(i-1,j-1)+s2*u(i,j-1)+u(i+1,j-1);
-        F(n,j-1)=c2;
+        F(n,j-1)=C2;
         A(1,1)=1;
         A(i,i-1)=-1;
         A(i,i)=s1;
@@ -50,7 +50,6 @@ end
 disp('Result=')
 num2str(u')
 figure (1)
-clf
 surfc(u')
 colorbar
 grid on
@@ -59,11 +58,7 @@ ylabel('t-axis');
 zlabel('u(x,t)');
 hold off
 figure(2)
-x(1)=a;
-x(n)=b;
-for i=2:n-1
-    x(i)=x(i-1)+h;
-end
+x=linspace(a, b, n);
 plot(x,u)
 title('heat distribution');
 hold on
