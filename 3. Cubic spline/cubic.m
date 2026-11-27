@@ -17,13 +17,13 @@ for i=1:n
 end
 for i=1:n-1
     A(i,i)=2*(h(i)+h(i+1));
-    B(i)=6*(m(i+1)-m(i));
+    b(i)=6*(m(i+1)-m(i));
 end
 for i=2:n-1
     A(i-1,i)=h(i);
     A(i,i-1)=h(i);
 end
-z=(A^(-1))*B' ;
+z=(A^(-1))*b' ;
 w(1)=0;
 for i=2:n
     w(i)=z(i-1);
