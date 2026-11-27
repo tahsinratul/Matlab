@@ -55,9 +55,9 @@
         sum=sum+(v1(i)-v2(i))*(v1(i)-v2(i));
     end
     rmse=sqrt(sum/length(v1))
-    plot(x,v1,'-r','LineWidth',1.5)
+    plot(x,v1,'-r')
     hold on
-    stem(x,v2,'--','MarkerEdgeColor',[0 .5 .5],'MarkerFaceColor','blue')
+    stem(x,v2,'--*b')
     grid on
     hold off
     title('heat equation')
