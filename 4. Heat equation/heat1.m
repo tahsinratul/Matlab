@@ -57,7 +57,7 @@
         v2(i)=exp(-pi^2*tf)*sin(pi*x(i)); %Exact solution at t=0.04
         sum=sum+(v1(i)-v2(i))*(v1(i)-v2(i));
     end
-    rmse=sqrt(sum/length(v1))
+    rmse=sqrt(sum/n)
     plot(x,v1,'-r')
     hold on
     stem(x,v2,'--*b')

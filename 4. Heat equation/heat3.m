@@ -54,7 +54,7 @@
         v2(i)=exp(-tf)*cos(pi*(x(i)-(1/2))); %Exact solution at t=0.4
         sum=sum+(v1(i)-v2(i))*(v1(i)-v2(i));
     end
-    rmse=sqrt(sum/length(v1))
+    rmse=sqrt(sum/n)
     plot(x,v1,'-r')
     hold on
     stem(x,v2,'--*b')
