@@ -54,7 +54,7 @@
     sum=0.0;
     for i=1:n
         v1(i)=u(i,m);%approximate solution depends on the value of m
-        v2(i)=exp(-pi^2*tf)*sin(x(i)*pi); %Exact solution at t=0.04
+        v2(i)=exp(-pi^2*tf)*sin(pi*x(i)); %Exact solution at t=0.04
         sum=sum+(v1(i)-v2(i))*(v1(i)-v2(i));
     end
     rmse=sqrt(sum/length(v1))
@@ -66,4 +66,4 @@
     title('heat equation')
     legend('approximate solution','actual solution');
     function z=f(x)
-    z=sin(x*pi);
+    z=sin(pi*x);
