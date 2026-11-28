@@ -60,14 +60,17 @@ ylabel('t-axis');
 zlabel('u(x,t)');
 hold off
 figure(2)
-x=linspace(a, b, n);
-plot(x,u)
+x=linspace(a,b,n);
+v=zeros(n,m);
+for j=1:m
+    v(:,j)=g(x,(j-1)*k);
+end
+plot(x,u)             
 hold on
+plot(x,v,'*k')        
 grid on
 title('heat distribution');
-for j=1:m
-    plot(x,g(x,(j-1)*k),'*k')
-end
+legend('approximate solution','actual solution');
 function z=f(x)
 z=sin(x);
 function z=g(x,t)
