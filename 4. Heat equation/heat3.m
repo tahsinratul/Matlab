@@ -46,8 +46,8 @@
     ylabel('t-axis');
     zlabel('u(x,t)');
     hold off
-    x=linspace(a,b,n);
     figure (2)
+    x=linspace(a,b,n);
     sum=0.0;
     for i=1:n
         v1(i)=u(i,m);%approximate solution depends on the value of m
