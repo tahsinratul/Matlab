@@ -7,7 +7,7 @@
 % and compare with the exact solution
 % y(x) = 4*cos(x) - 2*x + 2*x^2 - ((8*cos(1) - 9)/(2*sin(1)))*sin(x) - 4
 
-function galerkin
+function galerkin3
 clc
 clf
 clear all
