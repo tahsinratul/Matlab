@@ -57,13 +57,14 @@
     xlabel('x-axis');
     ylabel('y-axis');
     zlabel('u(x,y)');
+    hold off
     title('Solution of laplace equation using finite difference method')
+    figure(2)
     for i=1:n
         for j=1:m
             z(i,j)=f(x(i),y(j));
         end
     end
-    figure(2)
     plot(x,z,'*')
     hold on
     plot(x,u(:,:),'r')

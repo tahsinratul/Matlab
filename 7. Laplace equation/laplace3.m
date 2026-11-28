@@ -53,7 +53,7 @@ hold off
 title('solution of laplace equation');
 figure(2)
 x=linspace(0,1,n);
-plot(x,u(:,:),'r')
+plot(x,u,'-r')
 grid on
 xlabel('x-axis');
 ylabel('y-axis');

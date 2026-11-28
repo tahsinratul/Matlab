@@ -67,7 +67,7 @@
     figure(2)
     plot(x,z,'*')
     hold on
-    plot(x,u,'r')
+    plot(x,u,'-r')
     xlabel('X- axis')
     ylabel('Y- axis')
     title('Solution of laplace equation using finite difference method')
