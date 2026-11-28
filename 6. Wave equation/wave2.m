@@ -53,26 +53,22 @@ ylabel('t-axis');
 zlabel('u(x,t)');
 hold off
 figure(2)
-x=linspace(a, b, n);
-title('wave distribution');
-hold on
-grid on
-xlabel('position(x)');
-ylabel('displacement u');
+x=linspace(a,b,n);
 sum=0.0;
 for i=1:n
     v1(i)=u(i,m);%approximate solution depends on the value of m
     v2(i)=cos(tf)*sin(x(i)); %Exact solution at t=0.04
     sum=sum+(v1(i)-v2(i))*(v1(i)-v2(i));
 end
-rmse=sqrt(sum/length(v1))
+rmse=sqrt(sum/n)
 plot(x,v1,'-r')
 hold on
 stem(x,v2,'--*b')
 grid on
-legend('approximate solution','actual solution');
 hold off
+title('wave distribution');
+legend('approximate solution','actual solution');
 function z=f(x)
 z=sin(x);
-function b=g(x)
-b=0;
+function z=g(x)
+z=0;
