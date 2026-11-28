@@ -9,8 +9,8 @@
 
 function galerkin
 clc
-clear all
 clf
+clear all
 n = 6;
 A = zeros(n,n);
 B = zeros(n,1);
@@ -34,7 +34,7 @@ plot(x,yG,'-r')
 xlabel('x')
 ylabel('y(x)')
 title('Galerkin Weighted Residual Method')
-legend('Exact Solution','Galerkin Approximation','Location','best')
+legend('Exact Solution','Galerkin Approximation')
 grid on
 fprintf(' x approximate exact absolute error \n')
 for i=1:length(x)

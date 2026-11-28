@@ -9,8 +9,8 @@
 
     function finite
     clc
-    clear all
     clf
+    clear all
     a=0;
     b=2;
     alpha=0;
