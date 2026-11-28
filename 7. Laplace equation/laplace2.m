@@ -12,14 +12,14 @@
 
     function laplace2
     clc
-    clear all
     clf
-    n=10;
-    m=10;
+    clear all
     a=0;
     b=1;
     c=0;
     d=1;
+    n=10;
+    m=10;
     u=zeros(n,m);
     x=linspace(a,b,n);
     y=linspace(c,d,m);

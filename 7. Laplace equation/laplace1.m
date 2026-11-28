@@ -12,14 +12,14 @@
 
     function laplace1
     clc
-    clear all
     clf
-    n=10;
-    m=10;
+    clear all
     a=1;
     b=2;
     c=0;
     d=1;
+    n=10;
+    m=10;
     u=zeros(n,m);
     x=linspace(a,b,n);
     y=linspace(c,d,m);
@@ -51,7 +51,6 @@
         end
     end
     figure(1)
-    clf
     surfc(u);
     colorbar
     grid on
