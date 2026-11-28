@@ -22,7 +22,7 @@
     C2=0;%Right Boundary Condition
     h=(b-a)/(n-1);%Grid spacing
     k=(tf-0)/(m-1);%Time stepping
-    r=(c*c*k)/(h*h)%Stability criterion 0<r<0.5
+    r=(c^2*k)/(h^2)%Stability criterion 0<r<0.5
     u=zeros(n,m);
     for j=1:m
         u(1,j)=C1;
