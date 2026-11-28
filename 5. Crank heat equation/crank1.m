@@ -33,19 +33,21 @@ end
 for i=2:n-1
     u(i,1)=f(a+(i-1)*h);
 end
-A(1,1)=1;
-for j=2:m
-    for i=2:n-1
-        F(1,j-1)=C1;
-        F(i,j-1)=u(i-1,j-1)+s2*u(i,j-1)+u(i+1,j-1);
-        F(n,j-1)=C2;
-        A(1,1)=1;
-        A(i,i-1)=-1;
-        A(i,i)=s1;
-        A(i,i+1)=-1;
-        A(n,n)=1;
+A = zeros(n,n);
+A(1,1) = 1;
+A(n,n) = 1;
+for i = 2:n-1
+    A(i,i-1) = -1;
+    A(i,i) = s1;
+    A(i,i+1) = -1;
+end
+for j = 2:m
+    F(1,j-1) = C1;
+    F(n,j-1) = C2;
+    for i = 2:n-1
+        F(i,j-1) = u(i-1,j-1) + s2*u(i,j-1) + u(i+1,j-1);
     end
-    u(:,j)=inv(A)*F(:,j-1);
+    u(:,j) = inv(A)*F(:,j-1);
 end
 disp('Result=')
 num2str(u')
@@ -60,9 +62,9 @@ hold off
 figure(2)
 x=linspace(a, b, n);
 plot(x,u)
-title('heat distribution');
 hold on
 grid on
+title('heat distribution');
 for j=1:m
     plot(x,g(x,(j-1)*k),'*k')
 end
