@@ -1,21 +1,21 @@
-    % Use the finite difference method with h = 0.1 to approximate the
+% Use the finite difference method with h = 0.5 to approximate the
     % solution to the boundary value problem
     %
-    % d^2y/dx^2 = 2*dy/dx - y(x) + x*exp(x) - x,   0 <= x <= 2,
-    % y(0) = 0,  y(2) = -4
+    % d^2y/dx^2 + y + 1 = 0,   0 <= x <= 1,
+    % y(0) = 0,  y(1) = 0
     %
     % and compare the result with the actual solution
-    % y(x) = (1/6)*x^3*exp(x) - (5/3)*x*exp(x) + 2*exp(x) - x - 2
+    % y = cos(x) + ((1 - cos(1))/sin(1))*sin(x) - 1
 
-    function finite
+    function finite1
     clc
     clf
     clear all
     a=0;
-    b=2;
+    b=1;
     alpha=0;
-    beta=-4;
-    h=0.1;
+    beta=0;
+    h=0.5;
     n=(b-a)/h;
     x(1)=a;
     x(n+1)=b;
@@ -34,7 +34,7 @@
         D(i)= h^2*r(x(i));
     end
     y= A\D';
-    ey=1/6*x.^3.*exp(x)-5/3*x.*exp(x)+2*exp(x)-x-2;
+    ey=cos(x)+((1-cos(1))/sin(1)).*sin(x)-1;
     diff=ey'-y;
     disp('Finite Difference method')
     disp('Result=')
@@ -46,9 +46,9 @@
     grid on
     legend('Approximate solution','Exact solution');
     title('Finite Difference method')
-    function z1=p(x)
-    z1=2;
-    function z2=q(x)
-    z2=-1;
-    function z3=r(x)
-    z3=x*exp(x)-x;
+    function z=p(x)
+    z=0;
+    function z=q(x)
+    z=-1;
+    function z=r(x)
+    z=-1;
